@@ -1,0 +1,79 @@
+body{
+font-family:Arial;
+background:#f8f9fa;
+margin:0;
+}
+
+/* NAVBAR */
+
+.navbar{
+background:#000;
+}
+
+.logo{
+height:50px;
+}
+
+/* HERO */
+
+.membership-hero{
+height:45vh;
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("../images/membership.jpg") center/cover no-repeat;
+display:flex;
+align-items:center;
+color:white;
+padding:80px;
+}
+
+/* MEMBERSHIP */
+
+.membership-section{
+padding:80px 0;
+}
+
+.plan-card{
+background:white;
+padding:40px;
+text-align:center;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.plan-card:hover{
+transform:translateY(-6px);
+}
+
+.plan-card h2{
+margin:20px 0;
+}
+
+.plan-card ul{
+list-style:none;
+padding:0;
+}
+
+.plan-card li{
+margin:10px 0;
+}
+
+.popular{
+border:3px solid red;
+}
+
+/* CTA */
+
+.cta{
+padding:0px 0 40px;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+padding:25px;
+text-align:center;
+}

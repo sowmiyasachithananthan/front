@@ -1,0 +1,54 @@
+body{
+font-family:Arial;
+background:#f8f9fa;
+margin:0;
+}
+
+/* NAVBAR */
+
+.navbar{
+background:#000;
+}
+
+.logo{
+height:50px;
+}
+
+/* HERO */
+
+.contact-hero{
+height:45vh;
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("../images/contact.jpg") center/cover no-repeat;
+display:flex;
+align-items:center;
+color:white;
+padding:80px;
+}
+
+/* CONTACT */
+
+.contact-section{
+padding:40px 0 40px;
+}
+
+.contact-form input,
+.contact-form textarea{
+padding:12px;
+}
+
+/* MAP */
+
+.map iframe{
+width:100%;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+padding:25px;
+text-align:center;
+}

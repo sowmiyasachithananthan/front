@@ -1,0 +1,65 @@
+body{
+font-family:Arial;
+background:#f8f9fa;
+margin:0;
+}
+
+/* NAVBAR */
+
+.navbar{
+background:#000;
+}
+
+.logo{
+height:50px;
+}
+
+/* HERO */
+
+.schedule-hero{
+height:45vh;
+background:
+linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url("../images/schedule.jpg") center/cover no-repeat;
+display:flex;
+align-items:center;
+color:white;
+padding:80px;
+}
+
+/* SCHEDULE SECTION */
+
+.schedule-section{
+padding:80px 0;
+}
+
+/* TABLE */
+
+.schedule-table{
+background:white;
+text-align:center;
+}
+
+.schedule-table th{
+background:#000;
+color:white;
+}
+
+.schedule-table td{
+padding:15px;
+}
+
+/* CTA */
+
+.cta{
+padding:0px 0 30px;
+}
+
+/* FOOTER */
+
+footer{
+background:#111;
+color:white;
+padding:25px;
+text-align:center;
+}
