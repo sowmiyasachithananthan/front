@@ -108,6 +108,11 @@ padding:70px 0;
 font-weight:bold;
 }
 
+.mt-3{
+    text-align: center;
+    color: #000000;
+    text-decoration: none!important;
+}
 /* FOOTER */
 
 footer{
