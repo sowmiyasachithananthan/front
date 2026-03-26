@@ -21,7 +21,7 @@ height:50px;
 
 .hero{
 height:65vh;
-background:url("../images/hero.jpg") center/cover no-repeat;
+background:linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url("images/hero.jpg") center/cover no-repeat;
 display:flex;
 align-items:center;
 justify-content:flex-start;
@@ -59,7 +59,7 @@ margin-bottom:25px;
 /* SECTION */
 
 .section{
-padding:80px 0 0px;
+padding:80px 0;
 }
 
 /* FEATURE BOX */
@@ -67,60 +67,156 @@ padding:80px 0 0px;
 .feature-box{
 background:white;
 padding:30px;
-border-radius:10px;
+border-radius:15px;
 text-align:center;
-box-shadow:0 2px 10px rgba(0,0,0,0.1);
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+cursor:pointer;
+border:2px solid transparent;
 }
 
-/* PROGRAM IMAGES */
+.feature-box:hover{
+transform:translateY(-10px);
+box-shadow:0 15px 40px rgba(0,0,0,0.15);
+border-color:#dc3545;
+}
+
+/* PROGRAM SECTION FIXED */
+
+.program{
+text-align:center;
+}
 
 .program img{
-height:250px;
+height:260px;
+width:100%;
 object-fit:cover;
+border-radius:20px;
+transition:0.3s;
+}
+
+.program:hover img{
+transform:scale(1.05);
+box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* REMOVE DEFAULT LINK UNDERLINE */
+.program a{
+text-decoration:none;
+color:#000;
+display:inline-block;
+}
+
+/* TITLE */
+.program h5{
+margin-top:15px;
+font-weight:600;
+position:relative;
+display:inline-block;
+}
+
+/* CLEAN UNDERLINE */
+.program h5::after{
+content:"";
+position:absolute;
+left:0;
+bottom:-5px;
+width:100%;
+height:2px;
+background:#000;
+transition:0.3s ease;
+}
+
+/* HOVER EFFECT */
+.program a:hover h5{
+color:#dc3545;
+}
+
+.program a:hover h5::after{
+background:#dc3545;
+width:60%;
 }
 
 /* TRAINERS */
 
+.trainer{
+text-align:center;
+}
+
 .trainer img{
 height:300px;
+width:100%;
 object-fit:cover;
-border-radius:10px;
+border-radius:15px;
+transition:0.3s;
+}
+
+.trainer:hover img{
+transform:scale(1.05);
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
+}
+
+.trainer a{
+text-decoration:none;
+color:#000;
 }
 
 /* GALLERY */
 
 .gallery img{
 height:250px;
+width:100%;
 object-fit:cover;
-border-radius:10px;
+border-radius:15px;
+transition:0.3s;
+cursor:pointer;
+}
+
+.gallery img:hover{
+transform:scale(1.05);
+box-shadow:0 10px 30px rgba(0,0,0,0.2);
 }
 
 /* STATS */
 
 .stats{
-background:#111;
+background:linear-gradient(135deg, #111, #222);
 color:white;
 text-align:center;
 padding:70px 0;
+position:relative;
+overflow:hidden;
+}
+
+.stats::before{
+content:"";
+position:absolute;
+top:0;
+left:0;
+right:0;
+bottom:0;
+background:linear-gradient(45deg, transparent, rgba(255,0,0,0.1), transparent);
+animation:shimmer 3s infinite;
+}
+
+@keyframes shimmer{
+0%{transform:translateX(-100%);}
+100%{transform:translateX(100%);}
 }
 
 .stats h2{
 font-weight:bold;
 }
 
-.mt-3{
-    text-align: center;
-    color: #000000;
-    text-decoration: none!important;
-}
 /* FOOTER */
 
 footer{
-background:#111;
+background:linear-gradient(135deg, #111, #222);
 color:white;
-padding:30px;
+padding:40px 30px;
 text-align:center;
 margin-top:50px;
+border-top:3px solid #dc3545;
 }
 
 /* MOBILE RESPONSIVE */
@@ -146,6 +242,24 @@ height:40px;
 
 .section{
 padding:60px 15px;
+}
+
+.feature-box{
+margin-bottom:20px;
+}
+
+.program img,
+.trainer img,
+.gallery img{
+height:200px;
+}
+
+.stats{
+padding:50px 0;
+}
+
+footer{
+padding:30px 20px;
 }
 
 }
